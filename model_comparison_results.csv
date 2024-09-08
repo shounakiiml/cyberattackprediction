@@ -1,0 +1,6 @@
+Hosp.Type,,,Type of Breach,,,,Attack,
+0,BA,,0,Account Details,,,0,DISC
+1,GP,,1,Financial,,,1,HACK
+2,HP,,2,Undetermined,,,2,ID
+3,NP,,,,,,3,PHYS
+4,TR,,,,,,,
