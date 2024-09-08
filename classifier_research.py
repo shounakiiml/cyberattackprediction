@@ -182,3 +182,13 @@ for i, class_name in enumerate(class_names):
     plt.title(f'ROC Curve Comparison for Class: {class_name}')
     plt.legend(loc='lower right')
     plt.show()
+clf = DecisionTreeClassifier(max_depth=3)
+clf.fit(X_train, y_train)
+
+# Plot the decision tree
+plt.figure(figsize=(12, 8))
+plot_tree(clf, filled=True, feature_names=X.columns, class_names=class_names, rounded=True, max_depth=3, fontsize=10)
+plt.title('Decision Tree (Max Depth = 3)')
+plt.show()
+y=pd.DataFrame(y_resampled,columns=['Type of Breach'])
+df_merged = pd.concat([X_resampled, y], axis=1)
