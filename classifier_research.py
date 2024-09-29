@@ -15,7 +15,7 @@ from sklearn.preprocessing import label_binarize
 #from sklearn.metrics import plot_roc_curve
 from sklearn.multiclass import OneVsRestClassifier
 from xgboost import XGBClassifier
-#from catboost import CatBoostClassifier
+from catboost import CatBoostClassifier
 import lightgbm as lgb
 from imblearn.over_sampling import SMOTE
 from imblearn.under_sampling import RandomUnderSampler
@@ -64,7 +64,7 @@ classifiers = {
     'Bagging Tree': BaggingClassifier(DecisionTreeClassifier(random_state=0, criterion='entropy'), n_estimators=50, random_state=42),
     'Random Forest': RandomForestClassifier(n_estimators=100, random_state=42),
     'XGBoost': XGBClassifier(use_label_encoder=False, eval_metric='mlogloss'),
-    #'CatBoost': CatBoostClassifier(silent=True),
+    'CatBoost': CatBoostClassifier(silent=True),
     'LightGBM': lgb.LGBMClassifier()
 }
 # Store results
