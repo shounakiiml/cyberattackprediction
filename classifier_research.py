@@ -27,16 +27,9 @@ import openpyxl
 # For demonstration, create a dummy DataFrame
 np.random.seed(42)
 data=pd.read_excel("Compiled_2017.xlsx",sheet_name='Compiled_2017')
-def plot_confusion_matrix(y_test, y_pred, classifier_name):
-    cm = confusion_matrix(y_test, y_pred)
-    plt.figure(figsize=(6, 4))
-    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues')
-    plt.title(f'Confusion Matrix for {classifier_name}')
-    plt.ylabel('True label')
-    plt.xlabel('Predicted label')
-    plt.show()
+
 # Preprocess data
-X = data[['Hosp. Type','TypeofData','Type of Breach', 'CausalAgent','Crime','Literacy', 'PCI', 'Density', 'Policy', 'Connectivity']]
+X = data[['Hosp_Type','TypeofData','Type_of_Breach', 'CausalAgent','Crime','Literacy', 'PCI', 'Density', 'Policy', 'Connectivity']]
 y = data['Type']
 
 # Encode categorical features
@@ -76,8 +69,6 @@ plt.ion()
 
 results_df = pd.DataFrame(columns=['Classifier', 'Accuracy', 'AUC'])
 
-# Initialize a plot counter
-plt.figure(figsize=(15, 25))
 class_names = ['DISC', 'HACK', 'ID', 'PHYS']
 for i, (name, clf) in enumerate(classifiers.items(), start=1):
     print(i,name, clf)

@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce730ab0-a9d2-417f-8b6c-17420f8ab8fd" name="Changes" comment="Code added further">
+      <change afterPath="$PROJECT_DIR$/classifierv2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Compiled_2017.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Compiled_2017.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classifier_research.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifier_research.py" afterDir="false" />
@@ -117,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725817131013</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Code added further">
+      <option name="closed" value="true" />
+      <created>1727597275314</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727597275314</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,7 +161,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/classifier_research.py</url>
-          <line>146</line>
+          <line>137</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
